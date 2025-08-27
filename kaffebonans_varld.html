@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaffebönans värld</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f9f9f9, #f2ece4);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #6f4e37, #a47148);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      animation: fadeInDown 1s ease;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+    nav {
+      background: #4b2e2e;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      background: white;
+      margin-bottom: 30px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    section:hover {
+      transform: translateY(-5px);
+    }
+    section h2 {
+      margin-top: 0;
+      color: #6f4e37;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background: #6f4e37;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #4b2e2e;
+    }
+    .hero-img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kaffebönans värld</h1>
+    <p>Allt om kaffe, bönor och bryggmetoder</p>
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Kaffe bild" class="hero-img">
+  </header>
+
+  <nav>
+    <a href="#hem">Hem</a>
+    <a href="#om">Om kaffe</a>
+    <a href="#brygg">Bryggmetoder</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <main>
+    <section id="hem">
+      <h2>Hem</h2>
+      <p>Välkommen till kaffebönans värld! Här hittar du allt om olika kaffesorter, ursprung och hur du kan brygga ditt kaffe på bästa sätt.</p>
+      <a href="#om" class="btn">Läs mer</a>
+    </section>
+
+    <section id="om">
+      <h2>Om kaffe</h2>
+      <p>Kaffe är en av världens mest populära drycker. Bönorna odlas främst i tropiska länder och smaken påverkas av både jordmån, klimat och rostningsgrad.</p>
+      <p>De två vanligaste sorterna är <strong>Arabica</strong> och <strong>Robusta</strong>. Arabica är mildare och mer aromatisk, medan Robusta har starkare smak och mer koffein.</p>
+      <a href="#brygg" class="btn">Upptäck bryggmetoder</a>
+    </section>
+
+    <section id="brygg">
+      <h2>Bryggmetoder</h2>
+      <p>Det finns många sätt att brygga kaffe. Här är några populära metoder:</p>
+      <ul>
+        <li><strong>Espresso:</strong> En liten, stark kopp kaffe med rik arom.</li>
+        <li><strong>Pour-over:</strong> Ger en ren och klar smakprofil.</li>
+        <li><strong>Presskanna:</strong> Fyllig smak med mer oljor från kaffet.</li>
+        <li><strong>Aeropress:</strong> Snabb och mångsidig metod för olika smakprofiler.</li>
+      </ul>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Har du frågor om kaffe? Kontakta mig gärna!</p>
+      <form>
+        <label for="name">Namn:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">E-post:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Meddelande:</label><br>
+        <textarea id="message" name="message"></textarea><br><br>
+        <button type="submit" class="btn">Skicka</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kaffebönans värld | Bryggt med ☕ & ❤️</p>
+  </footer>
+</body>
+</html>
