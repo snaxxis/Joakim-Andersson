@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaffehemsida</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#fafafa; }
+    header { background:#3e2723; color:#fff; padding:20px; text-align:center; }
+    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
+    section { padding:40px 20px; max-width:800px; margin:auto; }
+    section:nth-child(even) { background:#f0f0f0; }
+    h2 { color:#3e2723; }
+    form { display:flex; flex-direction:column; max-width:400px; }
+    input, textarea { margin-bottom:10px; padding:10px; font-size:1em; }
+    button { background:#3e2723; color:#fff; padding:10px; border:none; cursor:pointer; }
+    button:hover { background:#5d4037; }
+    footer { text-align:center; padding:20px; background:#3e2723; color:#fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Välkommen till Kaffehörnan</h1>
+    <nav>
+      <a href="#historia">Historia</a>
+      <a href="#bryggmetoder">Bryggmetoder</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <section id="historia">
+    <h2>Kaffets historia</h2>
+    <p>Kaffe har sitt ursprung i Etiopien där det upptäcktes för flera hundra år sedan. Enligt legenden märkte en herde att hans getter blev pigga av att äta kaffebönor.</p>
+    <p>Från Etiopien spreds kaffet till Mellanöstern och därefter till Europa under 1600-talet. Idag är kaffe en av världens mest populära drycker och finns i otaliga varianter.</p>
+  </section>
+
+  <section id="bryggmetoder">
+    <h2>Bryggmetoder</h2>
+    <p>Det finns många sätt att brygga kaffe, och varje metod ger sin unika smakupplevelse.</p>
+    <ul>
+      <li><strong>Bryggkaffe:</strong> Den klassiska metoden för många svenska hem.</li>
+      <li><strong>Espresso:</strong> En koncentrerad shot som utgör grunden för cappuccino och latte.</li>
+      <li><strong>French Press:</strong> Ger ett fylligt och aromatiskt kaffe.</li>
+      <li><strong>Aeropress:</strong> En modern metod som ger en ren och mjuk kopp.</li>
+    </ul>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Har du frågor eller vill du veta mer? Fyll i formuläret nedan:</p>
+    <form>
+      <input type="text" placeholder="Ditt namn" required>
+      <input type="email" placeholder="Din e-post" required>
+      <textarea rows="5" placeholder="Skriv ditt meddelande här..." required></textarea>
+      <button type="submit">Skicka</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kaffehörnan. Alla rättigheter förbehållna.</p>
+  </footer>
+</body>
+</html>
