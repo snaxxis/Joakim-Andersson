@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min Hemsida</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Min Hemsida</div>
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home">Hem</a></li>
+        <li><a href="#about">Om mig</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Välkommen till min sida!</h1>
+    <img src="https://picsum.photos/600/300" alt="Testbild">
+  </section>
+
+  <section id="about">
+    <h2>Om mig</h2>
+    <p>Jag gillar musik, resor och programmering.</p>
+    <ul>
+      <li>🎵 Musikälskare</li>
+      <li>🌍 Äventyrlig resenär</li>
+      <li>💻 Hobbyprogrammerare</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <form>
+      <label for="namn">Namn:</label>
+      <input type="text" id="namn" name="namn" required>
+
+      <label for="epost">E-post:</label>
+      <input type="email" id="epost" name="epost" required>
+
+      <button type="submit">Skicka</button>
+    </form>
+  </section>
+
+  <section id="video">
+    <h2>Video</h2>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 Min Hemsida</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
